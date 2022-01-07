@@ -3,13 +3,15 @@ Learning Go
 
 # Install
 
+Download
+
 https://golang.org/dl
 
 In VS Code
 
 Search Go in Extensions and install
 
-> Right bottom -> Plain Text -> Go -> "Some Go analysis tools are missing from your GOPATH. Install.
+> Right bottom -> Plain Text -> Go -> Some Go analysis tools are missing from your GOPATH. Install.
 
 Env setup
 
@@ -66,14 +68,18 @@ go build
 ./main
 ```
 
+Go install 
+
+`go install` puts a bindary in $GOPATH/bin
+
 ## Basics
 
 package = project = workspace
 
-* executable: package main
+* executable: package **main**
 * re-usable: package < name > : dependency, library
 
-array: fixed
+array: fixed size
 
 slice: grow
 
@@ -81,13 +87,13 @@ slice: grow
 
 ### Value Types
 
-> int, float, string, bool, structs
+**int, float, string, bool, structs**
 
 Use pointers to change these things in a function
 
 ### Reference Types
 
-> slices, maps, channels, pointers, functions
+**slices, maps, channels, pointers, functions**
 
 Don't worry about pointers with these
 
@@ -104,8 +110,8 @@ Don't worry about pointers with these
 
 ### Map
 
-* Collection of key value pair
 * (Similar to dictionary in Python)
+* Collection of key value pair
 * All keys must be the same type
 * All values must be the same type
 * Keys are indexed - we can iterate over them
